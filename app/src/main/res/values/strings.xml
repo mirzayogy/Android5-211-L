@@ -3,4 +3,16 @@
     <string name="first_app">First App</string>
     <string name="button_yang_panjang">Button yang panjang</string>
     <string name="button">Button</string>
+    <string name="nama">Nama</string>
+    <string name="isi_nama_lengkap">Isi Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="isi_dengan_email_valid">Isi dengan email valid</string>
+    <string name="phone">Phone</string>
+    <string name="isi_dengan_nomor_yang_aktif">Isi dengan nomor yang aktif</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="isi_tanggal_lahir">Isi Tanggal Lahir</string>
+    <string name="jumlah_sks">Jumlah SKS</string>
+    <string name="isi_dengan_jumlah_sks_yang_sudah_ditempuh">Isi dengan jumlah SKS yang sudah ditempuh</string>
+    <string name="simpan">Simpan</string>
+    <string name="batal">Batal</string>
 </resources>
