@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -19,6 +20,7 @@
         android:hint="@string/isi_nama_lengkap"
         android:inputType="textPersonName"
         android:autofillHints="name"
+        android:layout_marginBottom="8dp"
         />
 
     <TextView
@@ -33,6 +35,8 @@
         android:hint="@string/isi_dengan_email_valid"
         android:inputType="textEmailAddress"
         android:autofillHints="emailAddress"
+        android:layout_marginBottom="8dp"
+
         />
 
     <TextView
@@ -47,6 +51,8 @@
         android:hint="@string/isi_dengan_nomor_yang_aktif"
         android:inputType="phone"
         android:autofillHints="phone"
+        android:layout_marginBottom="8dp"
+
         />
 
     <TextView
@@ -61,6 +67,8 @@
         android:hint="@string/isi_tanggal_lahir"
         android:inputType="date"
         android:autofillHints=""
+        android:layout_marginBottom="8dp"
+
         />
 
     <TextView
@@ -75,6 +83,8 @@
         android:hint="@string/isi_dengan_jumlah_sks_yang_sudah_ditempuh"
         android:inputType="number"
         android:autofillHints=""
+        android:layout_marginBottom="8dp"
+
         />
 
     <LinearLayout
@@ -89,6 +99,7 @@
             android:text="@string/simpan"
             android:backgroundTint="@color/success"
             android:drawableLeft="@drawable/ic_baseline_save_24"
+            android:layout_marginEnd="8dp"
             />
         <Button
             android:layout_width="wrap_content"
