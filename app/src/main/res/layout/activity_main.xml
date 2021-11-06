@@ -15,6 +15,7 @@
         />
 
     <EditText
+        android:id="@+id/namaEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/isi_nama_lengkap"
@@ -30,6 +31,7 @@
         />
 
     <EditText
+        android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/isi_dengan_email_valid"
@@ -46,6 +48,7 @@
         />
 
     <EditText
+        android:id="@+id/phoneEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/isi_dengan_nomor_yang_aktif"
@@ -62,6 +65,7 @@
         />
 
     <EditText
+        android:id="@+id/tanggalLahirEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/isi_tanggal_lahir"
@@ -78,6 +82,7 @@
         />
 
     <EditText
+        android:id="@+id/jumlahSksEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/isi_dengan_jumlah_sks_yang_sudah_ditempuh"
@@ -94,6 +99,7 @@
         android:gravity="end"
         >
         <Button
+            android:id="@+id/simpanButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/simpan"
@@ -102,6 +108,7 @@
             android:layout_marginEnd="8dp"
             />
         <Button
+            android:id="@+id/batalButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/batal"
