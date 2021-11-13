@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/isi_tanggal_lahir"
         android:inputType="date"
-        android:autofillHints=""
+        android:autofillHints="name"
         android:layout_marginBottom="8dp"
 
         />
@@ -87,9 +87,9 @@
         android:layout_height="wrap_content"
         android:hint="@string/isi_dengan_jumlah_sks_yang_sudah_ditempuh"
         android:inputType="number"
-        android:autofillHints=""
+        android:autofillHints="name"
         android:layout_marginBottom="8dp"
-
+        android:text="0"
         />
 
     <LinearLayout
