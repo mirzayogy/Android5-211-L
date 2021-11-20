@@ -8,113 +8,132 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nama"
-        />
-
-    <EditText
-        android:id="@+id/namaEditText"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/isi_nama_lengkap"
-        android:inputType="textPersonName"
-        android:autofillHints="name"
-        android:layout_marginBottom="8dp"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/email"
-        />
-
-    <EditText
-        android:id="@+id/emailEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/isi_dengan_email_valid"
-        android:inputType="textEmailAddress"
-        android:autofillHints="emailAddress"
-        android:layout_marginBottom="8dp"
-
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/phone"
-        />
-
-    <EditText
-        android:id="@+id/phoneEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/isi_dengan_nomor_yang_aktif"
-        android:inputType="phone"
-        android:autofillHints="phone"
-        android:layout_marginBottom="8dp"
-
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tanggal_lahir"
-        />
-
-    <EditText
-        android:id="@+id/tanggalLahirEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/isi_tanggal_lahir"
-        android:inputType="date"
-        android:autofillHints="name"
-        android:layout_marginBottom="8dp"
-
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/jumlah_sks"
-        />
-
-    <EditText
-        android:id="@+id/jumlahSksEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/isi_dengan_jumlah_sks_yang_sudah_ditempuh"
-        android:inputType="number"
-        android:autofillHints="name"
-        android:layout_marginBottom="8dp"
-        android:text="0"
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="end"
+        android:layout_height="match_parent"
         >
-        <Button
-            android:id="@+id/simpanButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/simpan"
-            android:backgroundTint="@color/success"
-            android:drawableLeft="@drawable/ic_baseline_save_24"
-            android:layout_marginEnd="8dp"
-            />
-        <Button
-            android:id="@+id/batalButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/batal"
-            android:backgroundTint="@color/danger"
-            android:drawableLeft="@drawable/ic_baseline_cancel_24"
-            />
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nama"
+                />
+
+            <EditText
+                android:id="@+id/namaEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/isi_nama_lengkap"
+                android:inputType="textPersonName"
+                android:autofillHints="name"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/isi_dengan_email_valid"
+                android:inputType="textEmailAddress"
+                android:autofillHints="emailAddress"
+                android:layout_marginBottom="8dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                />
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/isi_dengan_nomor_yang_aktif"
+                android:inputType="phone"
+                android:autofillHints="phone"
+                android:layout_marginBottom="8dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tanggal_lahir"
+                />
+
+            <EditText
+                android:id="@+id/tanggalLahirEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/isi_tanggal_lahir"
+                android:inputType="date"
+                android:autofillHints="name"
+                android:layout_marginBottom="8dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jumlah_sks"
+                />
+
+            <EditText
+                android:id="@+id/jumlahSksEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/isi_dengan_jumlah_sks_yang_sudah_ditempuh"
+                android:inputType="number"
+                android:autofillHints="name"
+                android:layout_marginBottom="8dp"
+                android:text="0"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                >
+                <Button
+                    android:id="@+id/simpanButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/simpan"
+                    android:backgroundTint="@color/success"
+                    android:drawableLeft="@drawable/ic_baseline_save_24"
+                    android:layout_marginEnd="8dp"
+                    />
+                <Button
+                    android:id="@+id/batalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/batal"
+                    android:backgroundTint="@color/danger"
+                    android:drawableLeft="@drawable/ic_baseline_cancel_24"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/logoutButton"
+                android:text="Logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
 
 </LinearLayout>

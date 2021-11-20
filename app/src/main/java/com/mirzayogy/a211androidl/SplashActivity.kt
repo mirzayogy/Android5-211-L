@@ -14,8 +14,19 @@ class SplashActivity : AppCompatActivity() {
         getSupportActionBar()?.hide()
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this,MainActivity::class.java)
-            startActivity(intent)
+
+            val sharedPreferences = this.getSharedPreferences("ANDROID_L", MODE_PRIVATE)
+            val username = sharedPreferences.getString("USERNAME","")
+
+            if(username==""){
+                val intent = Intent(this,LoginActivity::class.java)
+                startActivity(intent)
+            } else {
+                val intent = Intent(this,MainActivity::class.java)
+                startActivity(intent)
+            }
+
+
             finish()
         }, 2000)
     }

@@ -14,12 +14,15 @@ class MainActivity : AppCompatActivity() {
 
         val simpanButton = findViewById<Button>(R.id.simpanButton)
         val batalButton = findViewById<Button>(R.id.batalButton)
+        val logoutButton = findViewById<Button>(R.id.logoutButton)
 
         val namaEditText = findViewById<EditText>(R.id.namaEditText)
         val emailEditText = findViewById<EditText>(R.id.emailEditText)
         val phoneEditText = findViewById<EditText>(R.id.phoneEditText)
         val tanggalLahirEditText = findViewById<EditText>(R.id.tanggalLahirEditText)
         val jumlahSksEditText = findViewById<EditText>(R.id.jumlahSksEditText)
+
+
 
         simpanButton.setOnClickListener {
             val nama = namaEditText.text.toString()
@@ -38,6 +41,17 @@ class MainActivity : AppCompatActivity() {
 
         batalButton.setOnClickListener {
             Toast.makeText(this,"batal..",Toast.LENGTH_SHORT).show()
+        }
+
+        logoutButton.setOnClickListener {
+            val sharedPreferences = this.getSharedPreferences("ANDROID_L", MODE_PRIVATE)
+            with(sharedPreferences.edit()){
+                putString("USERNAME","")
+                apply()
+            }
+            val intent = Intent(this,LoginActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }
